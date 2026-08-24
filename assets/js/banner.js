@@ -1,10 +1,6 @@
 function initBannerSlideshow() {
     var slides = [
-        './assets/images/banner-1.jpg',
-        'assets/images/banner-2.html',
-        'assets/images/banner-3.html',
-        'assets/images/banner-4.html',
-        'assets/images/banner-5.html'
+        'assets/images/multiracial-group-of-athletes-playing-paddle-tenni-SNHZS26.jpg'
     ];
 
     var currentSlide = 0;
@@ -64,6 +60,7 @@ function initBannerSlideshow() {
     }
 
     function startSlideshow() {
+        if (slides.length < 2) return;
         setInterval(function() {
             if (!isTransitioning) {
                 nextSlide();
